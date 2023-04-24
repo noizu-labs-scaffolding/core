@@ -21,7 +21,7 @@ defmodule NoizuLabsErp.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      applications: [:noizu_labs_erp],
+      #applications: [:noizu_labs_erp],
       extra_applications: [:logger]
     ]
   end
