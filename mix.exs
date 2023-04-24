@@ -4,16 +4,24 @@ defmodule NoizuLabsErp.MixProject do
   def project do
     [
       app: :noizu_labs_erp,
+      name: "NoizuLabs ERP",
       version: "0.1.0",
       elixir: "~> 1.14",
+      elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
   end
 
+
+  # Specifies which paths to compile per environment.
+  defp elixirc_paths(:test), do: ["lib", "test/support"]
+  defp elixirc_paths(_), do: ["lib"]
+
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
+      applications: [:noizu_labs_erp],
       extra_applications: [:logger]
     ]
   end
