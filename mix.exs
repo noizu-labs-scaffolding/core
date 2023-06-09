@@ -1,10 +1,10 @@
-defmodule NoizuLabsErp.MixProject do
+defmodule Noizu.Core.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :noizu_labs_erp,
-      name: "NoizuLabs ERP",
+      app: :noizu_labs_core,
+      name: "Noizu Core",
       version: "0.1.0",
       elixir: "~> 1.14",
       elixirc_paths: elixirc_paths(Mix.env()),

@@ -1,4 +1,4 @@
-# NoizuLabsErp
+# NoizuErp
 
 **TODO: Add description**
 
