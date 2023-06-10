@@ -5,14 +5,14 @@ defmodule Noizu.Context.Entity do
   #-------------------
   #
   #-------------------
-  def id(R.ref(handler: Noizu.Context.Entity, identifier: id)), do: {:ok, id}
+  def id(R.ref(module: Noizu.Context.Entity, identifier: id)), do: {:ok, id}
 
 
   #-------------------
   #
   #-------------------
-  def ref(role) when is_atom(role), do: {:ok, R.ref(handler: Noizu.Context.Entity, identifier: role)}
-  def ref(R.ref(handler: Noizu.Context.Entity) = ref), do: {:ok, ref}
+  def ref(role) when is_atom(role), do: {:ok, R.ref(module: Noizu.Context.Entity, identifier: role)}
+  def ref(R.ref(module: Noizu.Context.Entity) = ref), do: {:ok, ref}
 end
 
 defmodule Noizu.Context do
@@ -24,16 +24,16 @@ defmodule Noizu.Context do
   #-------------------
   #
   #-------------------
-  defp roles(R.ref(handler: Noizu.Context.Entity, identifier: :restricted)) do
+  defp roles(R.ref(module: Noizu.Context.Entity, identifier: :restricted)) do
     {:ok, [restricted: true]}
   end
-  defp roles(R.ref(handler: Noizu.Context.Entity, identifier: :internal)) do
+  defp roles(R.ref(module: Noizu.Context.Entity, identifier: :internal)) do
     {:ok, [internal: true]}
   end
-  defp roles(R.ref(handler: Noizu.Context.Entity, identifier: :system)) do
+  defp roles(R.ref(module: Noizu.Context.Entity, identifier: :system)) do
     {:ok, [system: true]}
   end
-  defp roles(R.ref(handler: Noizu.Context.Entity, identifier: :admin)) do
+  defp roles(R.ref(module: Noizu.Context.Entity, identifier: :admin)) do
     {:ok, [admin: true]}
   end
 
