@@ -25,16 +25,16 @@ defmodule Noizu.Context do
   #
   #-------------------
   defp roles(R.ref(handler: Noizu.Context.Entity, identifier: :restricted)) do
-    [restricted: true]
+    {:ok, [restricted: true]}
   end
   defp roles(R.ref(handler: Noizu.Context.Entity, identifier: :internal)) do
-    [internal: true]
+    {:ok, [internal: true]}
   end
   defp roles(R.ref(handler: Noizu.Context.Entity, identifier: :system)) do
-    [system: true]
+    {:ok, [system: true]}
   end
   defp roles(R.ref(handler: Noizu.Context.Entity, identifier: :admin)) do
-    [admin: true]
+    {:ok, [admin: true]}
   end
 
   #-------------------
