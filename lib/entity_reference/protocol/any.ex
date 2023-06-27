@@ -1,5 +1,6 @@
 defimpl  Noizu.EntityReference.Protocol, for: Any do
   def id(subject), do: {:error, {:unsupported, subject}}
+  def kind(subject), do: {:error, {:unsupported, subject}}
   def ref(subject), do: {:error, {:unsupported, subject}}
   def sref(subject), do: {:error, {:unsupported, subject}}
   def entity(subject, _), do: {:error, {:unsupported, subject}}
@@ -12,6 +13,7 @@ defimpl  Noizu.EntityReference.Protocol, for: Any do
     quote do
       defimpl  Noizu.EntityReference.Protocol, for: [unquote(module)] do
         def id(subject), do: apply(unquote(module), :id, [subject])
+        def kind(subject), do: apply(unquote(module), :id, [subject])
         def ref(subject), do: apply(unquote(module), :ref, [subject])
         def sref(subject), do: apply(unquote(module), :sref, [subject])
         def entity(subject, context), do: apply(unquote(module), :entity, [subject, context])
