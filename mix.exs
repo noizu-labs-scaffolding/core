@@ -6,6 +6,7 @@ defmodule Noizu.Core.MixProject do
       app: :noizu_labs_core,
       name: "Noizu Core",
       version: "0.1.0",
+      package: package(),
       elixir: "~> 1.14",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
