@@ -7,6 +7,7 @@ defmodule Noizu.Core.MixProject do
       name: "Noizu Core",
       version: "0.1.0",
       package: package(),
+      description: description(),
       elixir: "~> 1.14",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
@@ -14,6 +15,10 @@ defmodule Noizu.Core.MixProject do
     ]
   end
 
+
+  defp description() do
+    "Core Noizu Scaffolding libraries"
+  end
 
   defp package() do
     [
