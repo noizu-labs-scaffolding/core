@@ -14,6 +14,19 @@ defmodule Noizu.Core.MixProject do
   end
 
 
+  defp package() do
+    [
+      licenses: ["MIT"],
+      links: %{
+        project: "https://github.com/noizu-labs-scaffolding/core",
+        noizu_labs: "https://github.com/noizu-labs",
+        noizu_labs_ml: "https://github.com/noizu-labs-ml",
+        noizu_labs_scaffolding: "https://github.com/noizu-labs-scaffolding",
+        developer: "https://github.com/noizu"
+      }
+    ]
+  end
+
   # Specifies which paths to compile per environment.
   defp elixirc_paths(:test), do: ["lib", "test/support"]
   defp elixirc_paths(_), do: ["lib"]
