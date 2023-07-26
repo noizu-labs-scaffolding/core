@@ -91,5 +91,25 @@ defmodule Noizu.Context do
   end
 
 
+  #-------------------
+  #
+  #-------------------
+  @doc """
+      placeholder for when real credentials need to be plumbed in, making it easy to find and cleanup over time.
+  """
+  def dummy() do
+    {:ok, ref} = Noizu.Context.Entity.ref(:system)
+    {:ok, roles} = roles(ref)
+    context(caller: ref, ts: DateTime.utc_now(), roles: roles)
+  end
+  def dummy(nil), do: dummy()
+  def dummy(context(roles: roles) = context) do
+    context(context, roles: [system: true])
+  end
+  def dummy_for_user(user, context \\ nil) do
+    with {:ok, user} <- Noizu.EntityReference.Protocol.ref(user) do
+      {:ok, context(dummy(context), caller: user)}
+    end
+  end
 
 end
