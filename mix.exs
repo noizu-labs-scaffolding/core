@@ -5,7 +5,7 @@ defmodule Noizu.Core.MixProject do
     [
       app: :noizu_labs_core,
       name: "Noizu Core",
-      version: "0.1.2",
+      version: "0.1.3",
       package: package(),
       description: description(),
       elixir: "~> 1.14",
