@@ -8,7 +8,7 @@ defimpl  Noizu.EntityReference.Protocol, for: Any do
   defmacro __deriving__(module, struct, options) do
     deriving(module, struct, options)
   end
-  def deriving(module, struct, options) do
+  def deriving(module, _struct, _options) do
     # we should be defining a provider rather than requiring these methods be defined for each struct
     quote do
       defimpl  Noizu.EntityReference.Protocol, for: [unquote(module)] do

@@ -5,13 +5,13 @@ defmodule Noizu.Context.Entity do
   #-------------------
   #
   #-------------------
-  def id(R.ref(module: Noizu.Context.Entity, identifier: id)), do: {:ok, id}
+  def id(R.ref(module: Noizu.Context.Entity, id: id)), do: {:ok, id}
 
 
   #-------------------
   #
   #-------------------
-  def ref(role) when is_atom(role), do: {:ok, R.ref(module: Noizu.Context.Entity, identifier: role)}
+  def ref(role) when is_atom(role), do: {:ok, R.ref(module: Noizu.Context.Entity, id: role)}
   def ref(R.ref(module: Noizu.Context.Entity) = ref), do: {:ok, ref}
 end
 
@@ -24,16 +24,16 @@ defmodule Noizu.Context do
   #-------------------
   #
   #-------------------
-  defp roles(R.ref(module: Noizu.Context.Entity, identifier: :restricted)) do
+  defp roles(R.ref(module: Noizu.Context.Entity, id: :restricted)) do
     {:ok, [restricted: true]}
   end
-  defp roles(R.ref(module: Noizu.Context.Entity, identifier: :internal)) do
+  defp roles(R.ref(module: Noizu.Context.Entity, id: :internal)) do
     {:ok, [internal: true]}
   end
-  defp roles(R.ref(module: Noizu.Context.Entity, identifier: :system)) do
+  defp roles(R.ref(module: Noizu.Context.Entity, id: :system)) do
     {:ok, [system: true]}
   end
-  defp roles(R.ref(module: Noizu.Context.Entity, identifier: :admin)) do
+  defp roles(R.ref(module: Noizu.Context.Entity, id: :admin)) do
     {:ok, [admin: true]}
   end
 
@@ -46,7 +46,7 @@ defmodule Noizu.Context do
     context(caller: ref, ts: DateTime.utc_now(), roles: roles)
   end
   def restricted(nil), do: restricted()
-  def restricted(context(roles: roles) = context) do
+  def restricted(context(roles: _) = context) do
     context(context, roles: [restricted: true])
   end
 
@@ -59,7 +59,7 @@ defmodule Noizu.Context do
     context(caller: ref, ts: DateTime.utc_now(), roles: roles)
   end
   def internal(nil), do: internal()
-  def internal(context(roles: roles) = context) do
+  def internal(context(roles: _) = context) do
     context(context, roles: [internal: true])
   end
 
@@ -73,7 +73,7 @@ defmodule Noizu.Context do
     context(caller: ref, ts: DateTime.utc_now(), roles: roles)
   end
   def system(nil), do: system()
-  def system(context(roles: roles) = context) do
+  def system(context(roles: _) = context) do
     context(context, roles: [system: true])
   end
 
@@ -86,7 +86,7 @@ defmodule Noizu.Context do
     context(caller: ref, ts: DateTime.utc_now(), roles: roles)
   end
   def admin(nil), do: admin()
-  def admin(context(roles: roles) = context) do
+  def admin(context(roles: _) = context) do
     context(context, roles: [admin: true])
   end
 
@@ -103,7 +103,7 @@ defmodule Noizu.Context do
     context(caller: ref, ts: DateTime.utc_now(), roles: roles)
   end
   def dummy(nil), do: dummy()
-  def dummy(context(roles: roles) = context) do
+  def dummy(context(roles: _) = context) do
     context(context, roles: [system: true])
   end
   def dummy_for_user(user, context \\ nil) do
