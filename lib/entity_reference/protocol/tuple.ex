@@ -1,27 +1,39 @@
-defimpl  Noizu.EntityReference.Protocol, for: Tuple do
+defimpl Noizu.EntityReference.Protocol, for: Tuple do
   require Noizu.EntityReference.Records
   alias Noizu.EntityReference.Records, as: R
+
+  @spec id(any) :: {:ok, any} | {:error, any}
   def id({:error, _} = e), do: e
+
   def id(R.ref(module: h) = subject) do
-    apply(h, :id, [subject])
+    h.id(subject)
   end
+
+  @spec kind(any) :: {:ok, any} | {:error, any}
   def kind({:error, _} = e), do: e
+
   def kind(R.ref(module: h) = subject) do
-    apply(h, :kind, [subject])
+    h.kind(subject)
   end
 
+  @spec ref(any) :: {:ok, any} | {:error, any}
   def ref({:error, _} = e), do: e
+
   def ref(R.ref(module: h) = subject) do
-    apply(h, :ref, [subject])
+    h.ref(subject)
   end
 
+  @spec sref(any) :: {:ok, any} | {:error, any}
   def sref({:error, _} = e), do: e
+
   def sref(R.ref(module: h) = subject) do
-    apply(h, :sref, [subject])
+    h.sref(subject)
   end
 
+  @spec entity(any, any) :: {:ok, any} | {:error, any}
   def entity({:error, _} = e, _), do: e
+
   def entity(R.ref(module: h) = subject, context) do
-    apply(h, :entity, [subject, context])
+    h.entity(subject, context)
   end
 end

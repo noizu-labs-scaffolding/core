@@ -1,4 +1,8 @@
 defmodule Noizu.Core do
+  @moduledoc """
+  Core module for Noizu.
+  """
+
   defmacro __using__(_) do
     quote do
       require Noizu.EntityReference.Records
