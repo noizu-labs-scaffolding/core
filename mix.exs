@@ -1,11 +1,11 @@
 defmodule Noizu.Core.MixProject do
   use Mix.Project
-
+  
   def project do
     [
       app: :noizu_labs_core,
       name: "Noizu Core",
-      version: "0.1.4",
+      version: "0.1.5",
       package: package(),
       description: description(),
       elixir: "~> 1.14",
@@ -14,28 +14,26 @@ defmodule Noizu.Core.MixProject do
       deps: deps()
     ]
   end
-
+  
   defp description() do
     "Core Noizu Scaffolding libraries"
   end
-
+  
   defp package() do
     [
       licenses: ["MIT"],
       links: %{
         project: "https://github.com/noizu-labs-scaffolding/core",
         noizu_labs: "https://github.com/noizu-labs",
-        noizu_labs_ml: "https://github.com/noizu-labs-ml",
-        noizu_labs_scaffolding: "https://github.com/noizu-labs-scaffolding",
         developer: "https://github.com/noizu"
       }
     ]
   end
-
+  
   # Specifies which paths to compile per environment.
   defp elixirc_paths(:test), do: ["lib", "test/support"]
   defp elixirc_paths(_), do: ["lib"]
-
+  
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
@@ -43,11 +41,11 @@ defmodule Noizu.Core.MixProject do
       extra_applications: [:logger]
     ]
   end
-
+  
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:credo, "~> 1.0", only: [:dev, :test], optional: true, runtime: false},
+      {:credo, "~> 1.0", runtime: false},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
