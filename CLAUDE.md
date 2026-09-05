@@ -22,3 +22,9 @@ Elixir ~> 1.14. `mix deps.get && mix compile`; `mix test` (unit suite; add `--ex
 - **No shell in main thread** — delegate to taskers.
 - **Worktrees**: all work on worktrees; `epic.<group>` consolidation branches off `develop`; squash-PR provenance into epics.
 - MAIN checkout owns `deps/_build`; worktrees symlink deps (absolute path).
+
+## Branch & PR Policy
+
+- Submodules sit on **`develop`** — keep your checkout on `develop`.
+- All PRs target **`develop`** (feature/bug/task branches fork from `develop`).
+- **`main` is CI/CD-only**: CI/CD automation performs all merges into `main` (release path). Never merge to or push `main` by hand.
