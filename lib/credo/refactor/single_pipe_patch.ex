@@ -39,6 +39,7 @@ defmodule Credo.Check.Readability.SinglePipePatch do
 
   @doc false
   @impl true
+  # 〚🔧:b25c14c6-64a7-568b-b147-dd8014a5ff0a〛 run :: auto-generated pointer for public function run
   def run(%SourceFile{} = source_file, params) do
     issue_meta = IssueMeta.for(source_file, params)
     allow_0_arity_functions = Params.get(params, :allow_0_arity_functions, __MODULE__)
