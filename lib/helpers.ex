@@ -1,4 +1,5 @@
 defmodule Noizu.Core.Helpers do
+  # 〚📦:𔏋𓻖𔃥𔎉〛 Noizu.Core.Helpers :: Noizu.Core.Helpers module
   @moduledoc false
 
   # -------------------------
@@ -6,9 +7,10 @@ defmodule Noizu.Core.Helpers do
   # -------------------------
   @doc """
     Verify response is a {:ok, value} tuple and return value or throw result exception
+
+  〚🔧:𓓹𔂮𓠝𓉤〛 ok? :: Verify response is a {:ok, value} tuple and return value or throw result exception
   """
   @spec ok?(any, any) :: any
-  # 〚🔧:843e10b2-2022-53f8-a787-afc02de85434〛 ok? :: Verify response is a {:ok, value} tuple and return value or throw result exception
   def ok?(result, requirement \\ :required)
   def ok?({:ok, v}, _), do: v
 
@@ -27,11 +29,12 @@ defmodule Noizu.Core.Helpers do
   # -------------------------
   @doc """
   Prepare banner string output.
+
+  〚🔧:𔇵𓒟𔕬𓦝〛 banner_text :: Prepare banner string output.
   """
   @spec banner_text(any, any) :: any
   @spec banner_text(any, any, any) :: any
   @spec banner_text(any, any, any, any) :: any
-  # 〚🔧:cd14df87-1f9f-5a80-acf1-5c9c74f898cd〛 banner_text :: Prepare banner string output.
   def banner_text(header, msg, len \\ 120, pad \\ 0) do
     header_len = String.length(header)
     h_len = div(len, 2)

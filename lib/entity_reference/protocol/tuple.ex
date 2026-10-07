@@ -1,9 +1,14 @@
+# 〚🔌:𓴟𔍇𓜃𔗎〛 Noizu.EntityReference.Protocol for Tuple :: Noizu.EntityReference.Protocol for Tuple implementation
 defimpl Noizu.EntityReference.Protocol, for: Tuple do
   require Noizu.EntityReference.Records
   alias Noizu.EntityReference.Records, as: R
 
   @spec id(any) :: {:ok, any} | {:error, any}
-  # 〚🔧:d63006d2-678f-577e-88cc-f91d11772bb7〛 id :: auto-generated pointer for public function id
+  @doc """
+  How: takes `R.ref(module: h) = subject`; returns `{:ok, any} | {:error, any}`
+
+  〚🔧:𓧜𓡎𓅞𔊧〛 id :: id/1
+  """
   def id({:error, _} = e), do: e
 
   def id(R.ref(module: h) = subject) do
@@ -11,7 +16,11 @@ defimpl Noizu.EntityReference.Protocol, for: Tuple do
   end
 
   @spec kind(any) :: {:ok, any} | {:error, any}
-  # 〚🔧:1beaa2cc-9d2d-5574-9551-acae8f7ad1c6〛 kind :: auto-generated pointer for public function kind
+  @doc """
+  How: takes `R.ref(module: h) = subject`; returns `{:ok, any} | {:error, any}`
+
+  〚🔧:𓆽𓗳𔏤𓨖〛 kind :: kind/1
+  """
   def kind({:error, _} = e), do: e
 
   def kind(R.ref(module: h) = subject) do
@@ -19,7 +28,11 @@ defimpl Noizu.EntityReference.Protocol, for: Tuple do
   end
 
   @spec ref(any) :: {:ok, any} | {:error, any}
-  # 〚🔧:6b4b8d6b-47dc-5190-877e-a68f1d34d714〛 ref :: auto-generated pointer for public function ref
+  @doc """
+  How: takes `R.ref(module: h) = subject`; returns `{:ok, any} | {:error, any}`
+
+  〚🔧:𓴥𓖻𓿻𓌤〛 ref :: ref/1
+  """
   def ref({:error, _} = e), do: e
 
   def ref(R.ref(module: h) = subject) do
@@ -27,7 +40,11 @@ defimpl Noizu.EntityReference.Protocol, for: Tuple do
   end
 
   @spec sref(any) :: {:ok, any} | {:error, any}
-  # 〚🔧:7fd5f652-9c1a-5be9-800c-03ee4ddcc5de〛 sref :: auto-generated pointer for public function sref
+  @doc """
+  How: takes `R.ref(module: h) = subject`; returns `{:ok, any} | {:error, any}`
+
+  〚🔧:𓮬𓳩𓾦𓝎〛 sref :: sref/1
+  """
   def sref({:error, _} = e), do: e
 
   def sref(R.ref(module: h) = subject) do
@@ -35,7 +52,11 @@ defimpl Noizu.EntityReference.Protocol, for: Tuple do
   end
 
   @spec entity(any, any) :: {:ok, any} | {:error, any}
-  # 〚🔧:db4ae3ab-0f73-5bf9-ae27-e419b2d01c19〛 entity :: auto-generated pointer for public function entity
+  @doc """
+  How: takes `R.ref(module: h) = subject`, `context`; returns `{:ok, any} | {:error, any}`
+
+  〚🔧:𓉺𓮚𓁽𓽹〛 entity :: entity/2
+  """
   def entity({:error, _} = e, _), do: e
 
   def entity(R.ref(module: h) = subject, context) do
