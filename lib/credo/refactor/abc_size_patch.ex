@@ -1,4 +1,7 @@
 defmodule Credo.Check.Refactor.ABCSizePatch do
+  @moduledoc """
+  〚📦:𓀕𓺌𓲛𓉒〛 Credo.Check.Refactor.ABCSizePatch :: Credo.Check.Refactor.ABCSizePatch module
+  """
   use Credo.Check,
     id: "EX4001",
     tags: [:controversial],
@@ -29,6 +32,7 @@ defmodule Credo.Check.Refactor.ABCSizePatch do
   @condition_ops [:if, :unless, :for, :try, :case, :cond, :and, :or, :&&, :||]
   @non_calls [:==, :fn, :__aliases__, :__block__, :if, :or, :|>, :%{}, :{}, :^]
 
+  # 〚🔧:𔄧𓥼𔉻𓋣〛 run :: run/2
   @doc false
   @impl true
   def run(%SourceFile{} = source_file, params) do
@@ -158,6 +162,8 @@ defmodule Credo.Check.Refactor.ABCSizePatch do
       ...>   ]
       ...> } |> Credo.Check.Refactor.ABCSize.abc_size
       1.0
+
+  〚🔧:𓤏𓯳𔃓𓩆〛 abc_size_for :: Returns the ABC size for the block inside the given AST, which is expected
   """
   def abc_size_for({_def_op, _meta, arguments}, excluded_functions) when is_list(arguments) do
     arguments

@@ -1,6 +1,8 @@
 defmodule Noizu.Context.Records do
   @moduledoc """
   Records for the context module.
+
+  〚📦:𓏥𓑽𓦪𔇽〛 Noizu.Context.Records :: Records for the context module.
   """
   require Record
 
