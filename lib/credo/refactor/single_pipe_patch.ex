@@ -1,4 +1,7 @@
 defmodule Credo.Check.Readability.SinglePipePatch do
+  @moduledoc """
+  〚📦:𓥞𔖁𔋱𔎩〛 Credo.Check.Readability.SinglePipePatch :: Credo.Check.Readability.SinglePipePatch module
+  """
   use Credo.Check,
     id: "EX3023",
     base_priority: :high,
@@ -37,6 +40,7 @@ defmodule Credo.Check.Readability.SinglePipePatch do
       ]
     ]
 
+  # 〚🔧:𓡝𔎱𓥌𓯚〛 run :: run/2
   @doc false
   @impl true
   def run(%SourceFile{} = source_file, params) do

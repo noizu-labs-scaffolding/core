@@ -1,4 +1,5 @@
 defmodule Noizu.Core.Helpers do
+  # 〚📦:𔏋𓻖𔃥𔎉〛 Noizu.Core.Helpers :: Noizu.Core.Helpers module
   @moduledoc false
 
   # -------------------------
@@ -6,6 +7,8 @@ defmodule Noizu.Core.Helpers do
   # -------------------------
   @doc """
     Verify response is a {:ok, value} tuple and return value or throw result exception
+
+  〚🔧:𓓹𔂮𓠝𓉤〛 ok? :: Verify response is a {:ok, value} tuple and return value or throw result exception
   """
   @spec ok?(any, any) :: any
   def ok?(result, requirement \\ :required)
@@ -26,6 +29,8 @@ defmodule Noizu.Core.Helpers do
   # -------------------------
   @doc """
   Prepare banner string output.
+
+  〚🔧:𔇵𓒟𔕬𓦝〛 banner_text :: Prepare banner string output.
   """
   @spec banner_text(any, any) :: any
   @spec banner_text(any, any, any) :: any
