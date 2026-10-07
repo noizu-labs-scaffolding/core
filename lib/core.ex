@@ -1,9 +1,15 @@
 defmodule Noizu.Core do
   @moduledoc """
   Core module for Noizu.
+
+  〚📦:𓔣𓳓𔍯𓙝〛 Noizu.Core :: Core module for Noizu.
   """
 
-  # 〚🔧:734ba4b8-dccb-579d-81d8-addfa3c2ab54〛 __using__ :: auto-generated pointer for public function __using__
+  @doc """
+  How: takes `_`
+
+  〚🔧:𓸲𓕈𔔥𓰴〛 __using__ :: __using__/1
+  """
   defmacro __using__(_) do
     quote do
       require Noizu.EntityReference.Records

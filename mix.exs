@@ -1,6 +1,6 @@
 defmodule Noizu.Core.MixProject do
   use Mix.Project
-  
+
   def project do
     [
       app: :noizu_labs_core,
@@ -14,11 +14,11 @@ defmodule Noizu.Core.MixProject do
       deps: deps()
     ]
   end
-  
+
   defp description() do
     "Core Noizu Scaffolding libraries"
   end
-  
+
   defp package() do
     [
       licenses: ["MIT"],
@@ -29,11 +29,11 @@ defmodule Noizu.Core.MixProject do
       }
     ]
   end
-  
+
   # Specifies which paths to compile per environment.
   defp elixirc_paths(:test), do: ["lib", "test/support"]
   defp elixirc_paths(_), do: ["lib"]
-  
+
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
@@ -41,7 +41,7 @@ defmodule Noizu.Core.MixProject do
       extra_applications: [:logger]
     ]
   end
-  
+
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
