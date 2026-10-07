@@ -3,6 +3,7 @@ defmodule Noizu.Core do
   Core module for Noizu.
   """
 
+  # 〚🔧:734ba4b8-dccb-579d-81d8-addfa3c2ab54〛 __using__ :: auto-generated pointer for public function __using__
   defmacro __using__(_) do
     quote do
       require Noizu.EntityReference.Records

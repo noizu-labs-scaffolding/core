@@ -1,0 +1,299 @@
+---
+pointers:
+  5a6a9864-12dc-5619-9dac-e35633693edd:
+    created_at: 2026-10-07T15:44:27.012388Z
+    description: auto-generated pointer for public function with_option
+    file_path: lib/context/context.ex
+    function: with_option
+    kind: 🔧
+    line: 38
+    token: 𓆁𓳋𓳒𓋝
+    updated_at: 2026-10-07T15:44:27.012388Z
+  430e325c-eaa0-5c4b-a333-daf5b616e36c:
+    created_at: 2026-10-07T15:44:27.235440Z
+    description: auto-generated pointer for public function ref
+    file_path: lib/entity_reference/protocol.ex
+    function: ref
+    kind: 🔌
+    line: 11
+    token: 𓂭𓋻𓬕𓡌
+    updated_at: 2026-10-07T15:44:27.235440Z
+  044f7fb6-d876-50ea-9cf5-30728d1aceea:
+    created_at: 2026-10-07T15:44:26.960551Z
+    description: auto-generated pointer for public function option
+    file_path: lib/context/context.ex
+    function: option
+    kind: 🔧
+    line: 48
+    token: 𔗷𓏒𓾑𓺊
+    updated_at: 2026-10-07T15:44:26.960551Z
+  ffadfbef-ff46-59de-b65c-0b046bed247d:
+    created_at: 2026-10-07T15:44:27.353998Z
+    description: auto-generated pointer for public function __deriving__
+    file_path: lib/entity_reference/protocol/any.ex
+    function: __deriving__
+    kind: 🔧
+    line: 21
+    token: 𓔖𔑋𔌴𓆝
+    updated_at: 2026-10-07T15:44:27.353998Z
+  91d46540-277f-54f3-8ff6-a47126be2de0:
+    created_at: 2026-10-07T15:44:26.937376Z
+    description: auto-generated pointer for public function restricted
+    file_path: lib/context/context.ex
+    function: restricted
+    kind: 🔧
+    line: 93
+    token: 𓯪𓾩𓂙𓸀
+    updated_at: 2026-10-07T15:44:26.937376Z
+  857db5b1-b101-5375-88db-9782b392db1c:
+    created_at: 2026-10-07T15:44:26.978073Z
+    description: auto-generated pointer for public function with_options
+    file_path: lib/context/context.ex
+    function: with_options
+    kind: 🔧
+    line: 43
+    token: 𓄧𓻝𓤈𔆬
+    updated_at: 2026-10-07T15:44:26.978073Z
+  6e28a592-7088-5f60-aaf3-358f5f906776:
+    created_at: 2026-10-07T15:44:27.697468Z
+    description: auto-generated pointer for public function ref
+    file_path: lib/entity_reference/protocol/any.ex
+    function: ref
+    kind: 🔧
+    line: 10
+    token: 𔀵𔀪𓭪𓨦
+    updated_at: 2026-10-07T15:44:27.697468Z
+  7fd5f652-9c1a-5be9-800c-03ee4ddcc5de:
+    created_at: 2026-10-07T15:44:27.840204Z
+    description: auto-generated pointer for public function sref
+    file_path: lib/entity_reference/protocol/tuple.ex
+    function: sref
+    kind: 🔧
+    line: 27
+    token: 𓮬𓳩𓾦𓝎
+    updated_at: 2026-10-07T15:44:27.840204Z
+  1beaa2cc-9d2d-5574-9551-acae8f7ad1c6:
+    created_at: 2026-10-07T15:44:27.872029Z
+    description: auto-generated pointer for public function kind
+    file_path: lib/entity_reference/protocol/tuple.ex
+    function: kind
+    kind: 🔧
+    line: 13
+    token: 𓆽𓗳𔏤𓨖
+    updated_at: 2026-10-07T15:44:27.872029Z
+  734ba4b8-dccb-579d-81d8-addfa3c2ab54:
+    created_at: 2026-10-07T15:44:27.071277Z
+    description: auto-generated pointer for public function __using__
+    file_path: lib/core.ex
+    function: __using__
+    kind: 🔧
+    line: 6
+    token: 𓸲𓕈𔔥𓰴
+    updated_at: 2026-10-07T15:44:27.071277Z
+  e2089678-c564-5875-a00e-22d613af99a7:
+    created_at: 2026-10-07T15:44:26.881778Z
+    description: auto-generated pointer for public function system
+    file_path: lib/context/context.ex
+    function: system
+    kind: 🔧
+    line: 127
+    token: 𔆁𓃴𔍠𓊇
+    updated_at: 2026-10-07T15:44:26.881778Z
+  42d653d1-5295-5e81-87c5-cd6d4ad69881:
+    created_at: 2026-10-07T15:44:26.685819Z
+    description: auto-generated pointer for public function dummy_for_user
+    file_path: lib/context/context.ex
+    function: dummy_for_user
+    kind: 🔧
+    line: 179
+    token: 𓨘𓷪𓺕𔙡
+    updated_at: 2026-10-07T15:44:26.685819Z
+  051a7494-0a2d-5a12-a1d1-6b11caec44fc:
+    created_at: 2026-10-07T15:44:27.787321Z
+    description: auto-generated pointer for public function id
+    file_path: lib/entity_reference/protocol/any.ex
+    function: id
+    kind: 🔧
+    line: 3
+    token: 𓂄𓪋𓌁𓖜
+    updated_at: 2026-10-07T15:44:27.787321Z
+  f0da4941-a150-5b14-993f-c1f93910e486:
+    created_at: 2026-10-07T15:44:27.098819Z
+    description: Returns the ABC size for the block inside the given AST, which is expected
+    file_path: lib/credo/refactor/abc_size_patch.ex
+    function: abc_size_for
+    kind: 🔧
+    line: 162
+    token: 𓤏𓯳𔃓𓩆
+    updated_at: 2026-10-07T15:44:27.098819Z
+  209c9f34-7965-5747-98d1-b6686fc39ade:
+    created_at: 2026-10-07T15:44:27.049603Z
+    description: auto-generated pointer for public function id
+    file_path: lib/context/context.ex
+    function: id
+    kind: 🔧
+    line: 13
+    token: 𓈾𔖖𓉢𔀎
+    updated_at: 2026-10-07T15:44:27.049603Z
+  6b4b8d6b-47dc-5190-877e-a68f1d34d714:
+    created_at: 2026-10-07T15:44:27.859266Z
+    description: auto-generated pointer for public function ref
+    file_path: lib/entity_reference/protocol/tuple.ex
+    function: ref
+    kind: 🔧
+    line: 20
+    token: 𓴥𓖻𓿻𓌤
+    updated_at: 2026-10-07T15:44:27.859266Z
+  663e17e4-6f01-5af1-95ff-558e3f17872e:
+    created_at: 2026-10-07T15:44:26.822925Z
+    description: placeholder for when real credentials need to be plumbed in, making it easy to find and cleanup over
+    file_path: lib/context/context.ex
+    function: dummy
+    kind: 🔧
+    line: 164
+    token: 𓯚𓤣𓺷𓃾
+    updated_at: 2026-10-07T15:44:26.822925Z
+  60cd34c3-c216-5c21-91b8-2d9bad6d1cb2:
+    created_at: 2026-10-07T15:44:26.857705Z
+    description: auto-generated pointer for public function admin
+    file_path: lib/context/context.ex
+    function: admin
+    kind: 🔧
+    line: 144
+    token: 𔎆𓸂𔑈𓈒
+    updated_at: 2026-10-07T15:44:26.857705Z
+  097ad2c7-d416-5edf-b1c5-3db1ede1ffd3:
+    created_at: 2026-10-07T15:44:27.120515Z
+    description: auto-generated pointer for public function run
+    file_path: lib/credo/refactor/abc_size_patch.ex
+    function: run
+    kind: 🔧
+    line: 34
+    token: 𔄧𓥼𔉻𓋣
+    updated_at: 2026-10-07T15:44:27.120515Z
+  220abfc2-552b-5fce-b05c-9c6f301647e2:
+    created_at: 2026-10-07T15:44:27.173964Z
+    description: auto-generated pointer for public function entity
+    file_path: lib/entity_reference/protocol.ex
+    function: entity
+    kind: 🔌
+    line: 17
+    token: 𓜍𓂇𔐿𓈲
+    updated_at: 2026-10-07T15:44:27.173964Z
+  0f802d6e-2e24-51d5-9c52-7cc53b421f52:
+    created_at: 2026-10-07T15:44:27.529978Z
+    description: auto-generated pointer for public function sref
+    file_path: lib/entity_reference/protocol/any.ex
+    function: sref
+    kind: 🔧
+    line: 14
+    token: 𓽁𓷄𔌱𓛲
+    updated_at: 2026-10-07T15:44:27.529978Z
+  bc4cbc80-8ee2-5c5e-a32f-af8efda66196:
+    created_at: 2026-10-07T15:44:26.907586Z
+    description: auto-generated pointer for public function internal
+    file_path: lib/context/context.ex
+    function: internal
+    kind: 🔧
+    line: 110
+    token: 𔃧𓫎𓜟𔌖
+    updated_at: 2026-10-07T15:44:26.907586Z
+  db4ae3ab-0f73-5bf9-ae27-e419b2d01c19:
+    created_at: 2026-10-07T15:44:27.818492Z
+    description: auto-generated pointer for public function entity
+    file_path: lib/entity_reference/protocol/tuple.ex
+    function: entity
+    kind: 🔧
+    line: 34
+    token: 𓉺𓮚𓁽𓽹
+    updated_at: 2026-10-07T15:44:27.818492Z
+  cd14df87-1f9f-5a80-acf1-5c9c74f898cd:
+    created_at: 2026-10-07T15:44:27.909675Z
+    description: Prepare banner string output.
+    file_path: lib/helpers.ex
+    function: banner_text
+    kind: 🔧
+    line: 33
+    token: 𔇵𓒟𔕬𓦝
+    updated_at: 2026-10-07T15:44:27.909675Z
+  dc147254-66cb-5fce-a352-c787577a3f39:
+    created_at: 2026-10-07T15:44:27.733381Z
+    description: auto-generated pointer for public function kind
+    file_path: lib/entity_reference/protocol/any.ex
+    function: kind
+    kind: 🔧
+    line: 6
+    token: 𓫬𓉢𓒀𓱉
+    updated_at: 2026-10-07T15:44:27.733381Z
+  b25c14c6-64a7-568b-b147-dd8014a5ff0a:
+    created_at: 2026-10-07T15:44:27.145312Z
+    description: auto-generated pointer for public function run
+    file_path: lib/credo/refactor/single_pipe_patch.ex
+    function: run
+    kind: 🔧
+    line: 42
+    token: 𓡝𔎱𓥌𓯚
+    updated_at: 2026-10-07T15:44:27.145312Z
+  159831d1-c023-5fd8-a5f0-e999e598deda:
+    created_at: 2026-10-07T15:44:27.260510Z
+    description: auto-generated pointer for public function kind
+    file_path: lib/entity_reference/protocol.ex
+    function: kind
+    kind: 🔌
+    line: 8
+    token: 𓮶𓌕𓈁𔕺
+    updated_at: 2026-10-07T15:44:27.260510Z
+  0987ac7d-e62f-556a-b732-dcde0b80abdc:
+    created_at: 2026-10-07T15:44:27.209266Z
+    description: auto-generated pointer for public function sref
+    file_path: lib/entity_reference/protocol.ex
+    function: sref
+    kind: 🔌
+    line: 14
+    token: 𓈒𓦗𓺃𓁬
+    updated_at: 2026-10-07T15:44:27.209266Z
+  d63006d2-678f-577e-88cc-f91d11772bb7:
+    created_at: 2026-10-07T15:44:27.889115Z
+    description: auto-generated pointer for public function id
+    file_path: lib/entity_reference/protocol/tuple.ex
+    function: id
+    kind: 🔧
+    line: 6
+    token: 𓧜𓡎𓅞𔊧
+    updated_at: 2026-10-07T15:44:27.889115Z
+  4d4ebc8a-d3e9-5240-86fe-7d220285f10e:
+    created_at: 2026-10-07T15:44:27.388354Z
+    description: auto-generated pointer for public function entity
+    file_path: lib/entity_reference/protocol/any.ex
+    function: entity
+    kind: 🔧
+    line: 18
+    token: 𓷓𓅁𔗂𓘾
+    updated_at: 2026-10-07T15:44:27.388354Z
+  843e10b2-2022-53f8-a787-afc02de85434:
+    created_at: 2026-10-07T15:44:27.926164Z
+    description: Verify response is a {:ok, value} tuple and return value or throw result exception
+    file_path: lib/helpers.ex
+    function: ok?
+    kind: 🔧
+    line: 11
+    token: 𓓹𔂮𓠝𓉤
+    updated_at: 2026-10-07T15:44:27.926164Z
+  07c0d04a-7fb8-5464-b75d-52d99d8d984d:
+    created_at: 2026-10-07T15:44:27.304121Z
+    description: auto-generated pointer for public function id
+    file_path: lib/entity_reference/protocol.ex
+    function: id
+    kind: 🔌
+    line: 5
+    token: 𓭰𔃛𔒲𓩽
+    updated_at: 2026-10-07T15:44:27.304121Z
+  91099f04-fe7b-552a-8989-f6acb5148c76:
+    created_at: 2026-10-07T15:44:27.036021Z
+    description: auto-generated pointer for public function ref
+    file_path: lib/context/context.ex
+    function: ref
+    kind: 🔧
+    line: 19
+    token: 𓪷𔎞𓵸𓃖
+    updated_at: 2026-10-07T15:44:27.036021Z
